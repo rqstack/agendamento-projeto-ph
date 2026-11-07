@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/clientes.css" />
+
+    <title>Clientes | Code & Corte</title>
+  </head>
+
+  <body>
+    <header class="cabecalho">
+      <nav class="navegacao">
+        <a href="./agenda.html">
+          <img
+            src="./img/logo_code_corte_transparente.png"
+            class="logo"
+            alt="Logo Code & Corte"
+          />
+        </a>
+
+        <ul class="lista-navegacao">
+          <li class="item-navegacao">
+            <a href="./agenda.html" class="link-navegacao"> Início </a>
+          </li>
+
+          <li class="item-navegacao">
+            <a href="./clientes.html" class="link-navegacao"> Clientes </a>
+          </li>
+
+          <li class="item-navegacao">
+            <a href="./servicos.html" class="link-navegacao"> Serviços </a>
+          </li>
+
+          <li class="item-navegacao">
+            <a href="./financeiro.html" class="link-navegacao"> Financeiro </a>
+          </li>
+        </ul>
+
+        <a href="./perfil.html" class="perfil"> Perfil </a>
+      </nav>
+    </header>
+
+    <main class="principal">
+      <section class="cabecalho-clientes">
+        <div class="informacoes-clientes">
+          <p class="texto-clientes">Gerencie seus clientes</p>
+
+          <h1 class="titulo-clientes">Clientes</h1>
+        </div>
+
+        <button class="botao-novo-cliente">+ Novo cliente</button>
+      </section>
+
+      <section class="ferramentas-clientes">
+        <label for="pesquisa-cliente" class="rotulo-pesquisa">
+          Pesquisar cliente
+        </label>
+
+        <input
+          type="search"
+          id="pesquisa-cliente"
+          class="campo-pesquisa"
+          placeholder="Nome, telefone ou e-mail"
+        />
+      </section>
+
+      <section class="lista-clientes">
+        <article class="cliente">
+          <div class="informacoes-cliente">
+            <h2 class="nome-cliente">João Silva</h2>
+
+            <p class="telefone-cliente">(11) 99999-0000</p>
+
+            <p class="email-cliente">joao@email.com</p>
+          </div>
+
+          <div class="dados-cliente">
+            <p class="total-agendamentos">8 atendimentos</p>
+
+            <p class="ultimo-atendimento">Último atendimento: 01/11</p>
+          </div>
+
+          <div class="acoes-cliente">
+            <a href="#" class="link-ver-cliente"> Ver cliente </a>
+          </div>
+        </article>
+
+        <article class="cliente">
+          <div class="informacoes-cliente">
+            <h2 class="nome-cliente">Pedro Santos</h2>
+
+            <p class="telefone-cliente">(11) 98888-1111</p>
+
+            <p class="email-cliente">pedro@email.com</p>
+          </div>
+
+          <div class="dados-cliente">
+            <p class="total-agendamentos">5 atendimentos</p>
+
+            <p class="ultimo-atendimento">Último atendimento: 30/10</p>
+          </div>
+
+          <div class="acoes-cliente">
+            <a href="#" class="link-ver-cliente"> Ver cliente </a>
+          </div>
+        </article>
+
+        <article class="cliente">
+          <div class="informacoes-cliente">
+            <h2 class="nome-cliente">Lucas Oliveira</h2>
+
+            <p class="telefone-cliente">(11) 97777-2222</p>
+
+            <p class="email-cliente">lucas@email.com</p>
+          </div>
+
+          <div class="dados-cliente">
+            <p class="total-agendamentos">12 atendimentos</p>
+
+            <p class="ultimo-atendimento">Último atendimento: 04/11</p>
+          </div>
+
+          <div class="acoes-cliente">
+            <a href="#" class="link-ver-cliente"> Ver cliente </a>
+          </div>
+        </article>
+      </section>
+
+      <section class="clientes-vazio">
+        <p class="mensagem-vazia">Nenhum cliente encontrado.</p>
+      </section>
+    </main>
+  </body>
+</html>

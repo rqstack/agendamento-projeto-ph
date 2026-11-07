@@ -1,0 +1,382 @@
+/* ==============================
+   CONFIGURAÇÕES GERAIS
+============================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #050b14;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+/* ==============================
+   CABEÇALHO
+============================== */
+
+.cabecalho {
+  width: 100%;
+  border-bottom: 1px solid #172333;
+}
+
+.navegacao {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 80px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 30px;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  display: block;
+}
+
+.lista-navegacao {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+
+  list-style: none;
+
+  margin-left: 60px;
+}
+
+.link-navegacao {
+  color: #8f9baa;
+  font-size: 15px;
+
+  transition: color 0.2s ease;
+}
+
+.link-navegacao:hover {
+  color: #ffffff;
+}
+
+.perfil {
+  margin-left: auto;
+
+  color: #ffffff;
+  font-size: 15px;
+}
+
+/* ==============================
+   CONTEÚDO PRINCIPAL
+============================== */
+
+.principal {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 55px 30px 80px;
+}
+
+/* ==============================
+   CABEÇALHO DOS CLIENTES
+============================== */
+
+.cabecalho-clientes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 40px;
+}
+
+.texto-clientes {
+  color: #7f8b99;
+  font-size: 15px;
+
+  margin-bottom: 8px;
+}
+
+.titulo-clientes {
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+/* ==============================
+   BOTÃO NOVO CLIENTE
+============================== */
+
+.botao-novo-cliente {
+  border: none;
+  border-radius: 6px;
+
+  padding: 13px 20px;
+
+  background-color: #1677ff;
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.botao-novo-cliente:hover {
+  background-color: #0869ee;
+  transform: translateY(-1px);
+}
+
+/* ==============================
+   PESQUISA
+============================== */
+
+.ferramentas-clientes {
+  margin-bottom: 25px;
+}
+
+.rotulo-pesquisa {
+  display: block;
+
+  color: #8f9baa;
+  font-size: 13px;
+
+  margin-bottom: 8px;
+}
+
+.campo-pesquisa {
+  width: 100%;
+
+  padding: 14px 16px;
+
+  border: 1px solid #1d2b3c;
+  border-radius: 6px;
+
+  background-color: #0b1420;
+  color: #ffffff;
+
+  font-size: 14px;
+
+  outline: none;
+}
+
+.campo-pesquisa::placeholder {
+  color: #667383;
+}
+
+.campo-pesquisa:focus {
+  border-color: #1677ff;
+}
+
+/* ==============================
+   LISTA DE CLIENTES
+============================== */
+
+.lista-clientes {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+/* ==============================
+   CLIENTE
+============================== */
+
+.cliente {
+  display: grid;
+
+  grid-template-columns: 2fr 1.3fr auto;
+
+  align-items: center;
+
+  gap: 30px;
+
+  min-height: 110px;
+
+  padding: 22px 25px;
+
+  background-color: #0b1420;
+
+  border: 1px solid #172536;
+  border-radius: 8px;
+
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.cliente:hover {
+  border-color: #24415f;
+  background-color: #0d1825;
+}
+
+/* ==============================
+   INFORMAÇÕES DO CLIENTE
+============================== */
+
+.nome-cliente {
+  font-size: 17px;
+  font-weight: 600;
+
+  margin-bottom: 7px;
+}
+
+.telefone-cliente,
+.email-cliente {
+  color: #7f8b99;
+  font-size: 13px;
+
+  margin-top: 4px;
+}
+
+/* ==============================
+   DADOS DO CLIENTE
+============================== */
+
+.total-agendamentos {
+  color: #ffffff;
+  font-size: 14px;
+
+  margin-bottom: 6px;
+}
+
+.ultimo-atendimento {
+  color: #7f8b99;
+  font-size: 12px;
+}
+
+/* ==============================
+   AÇÕES
+============================== */
+
+.acoes-cliente {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.link-ver-cliente {
+  color: #3d91ff;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.link-ver-cliente:hover {
+  color: #ffffff;
+}
+
+/* ==============================
+   ESTADO VAZIO
+============================== */
+
+.clientes-vazio {
+  display: none;
+
+  text-align: center;
+
+  padding: 50px 20px;
+
+  color: #7f8b99;
+}
+
+.mensagem-vazia {
+  font-size: 14px;
+}
+
+/* ==============================
+   RESPONSIVIDADE
+============================== */
+
+@media (max-width: 800px) {
+  .navegacao {
+    padding: 0 20px;
+  }
+
+  .lista-navegacao {
+    gap: 18px;
+    margin-left: 30px;
+  }
+
+  .principal {
+    padding: 40px 20px 60px;
+  }
+
+  .cliente {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .acoes-cliente {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .navegacao {
+    min-height: auto;
+
+    padding: 20px;
+
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .lista-navegacao {
+    order: 3;
+
+    width: 100%;
+
+    margin-left: 0;
+
+    overflow-x: auto;
+
+    padding-bottom: 5px;
+  }
+
+  .perfil {
+    margin-left: auto;
+  }
+
+  .cabecalho-clientes {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 25px;
+  }
+
+  .titulo-clientes {
+    font-size: 30px;
+  }
+
+  .botao-novo-cliente {
+    width: 100%;
+  }
+
+  .principal {
+    padding: 35px 16px 50px;
+  }
+}
