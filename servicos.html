@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/servicos.css" />
+
+    <title>Serviços | Code & Corte</title>
+  </head>
+
+  <body>
+    <header class="cabecalho">
+      <nav class="navegacao">
+        <img
+          src="./img/logo_code_corte_transparente.png"
+          class="logo"
+          alt="Logo Code & Corte"
+        />
+
+        <ul class="lista-navegacao">
+          <li class="item-navegacao">
+            <a href="./areaprofi.html" class="link-navegacao"> Início </a>
+          </li>
+
+          <li class="item-navegacao">
+            <a href="./horarios.html" class="link-navegacao"> Horários </a>
+          </li>
+
+          <li class="item-navegacao">
+            <a href="./clientes.html" class="link-navegacao"> Clientes </a>
+          </li>
+
+          <li class="item-navegacao">
+            <a href="./servicos.html" class="link-navegacao ativo">
+              Serviços
+            </a>
+          </li>
+
+          <li class="item-navegacao">
+            <a href="#" class="link-navegacao"> Financeiro </a>
+          </li>
+        </ul>
+
+        <a href="#" class="perfil"> Perfil </a>
+      </nav>
+    </header>
+
+    <main class="principal">
+      <section class="cabecalho-pagina">
+        <div>
+          <p class="caminho">Área profissional / Serviços</p>
+
+          <h1 class="titulo">Serviços</h1>
+
+          <p class="descricao">
+            Cadastre e organize os serviços que você oferece aos seus clientes.
+          </p>
+        </div>
+
+        <button class="botao-novo" id="abrirFormulario">Novo serviço</button>
+      </section>
+
+      <section class="resumo">
+        <div class="resumo-item">
+          <span class="numero">6</span>
+          <span class="texto">Serviços cadastrados</span>
+        </div>
+
+        <div class="resumo-item">
+          <span class="numero">R$ 45</span>
+          <span class="texto">Preço médio</span>
+        </div>
+
+        <div class="resumo-item">
+          <span class="numero">30 min</span>
+          <span class="texto">Duração média</span>
+        </div>
+      </section>
+
+      <section class="formulario" id="formulario">
+        <div class="titulo-formulario">
+          <div>
+            <h2>Novo serviço</h2>
+
+            <p>Informe os dados do serviço.</p>
+          </div>
+
+          <button class="fechar" id="fecharFormulario">×</button>
+        </div>
+
+        <form id="formServico">
+          <div class="campo">
+            <label for="nomeServico"> Nome do serviço </label>
+
+            <input
+              type="text"
+              id="nomeServico"
+              placeholder="Ex: Corte masculino"
+              required
+            />
+          </div>
+
+          <div class="linha">
+            <div class="campo">
+              <label for="precoServico"> Preço </label>
+
+              <input
+                type="number"
+                id="precoServico"
+                placeholder="45.00"
+                min="0"
+                step="0.01"
+                required
+              />
+            </div>
+
+            <div class="campo">
+              <label for="duracaoServico"> Duração </label>
+
+              <select id="duracaoServico" required>
+                <option value="">Selecione</option>
+
+                <option value="15">15 minutos</option>
+
+                <option value="20">20 minutos</option>
+
+                <option value="30">30 minutos</option>
+
+                <option value="45">45 minutos</option>
+
+                <option value="60">1 hora</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="acoes-formulario">
+            <button
+              type="button"
+              class="botao-cancelar"
+              id="cancelarFormulario"
+            >
+              Cancelar
+            </button>
+
+            <button type="submit" class="botao-salvar">
+              Cadastrar serviço
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section class="lista-servicos">
+        <div class="cabecalho-lista">
+          <div>
+            <h2>Serviços cadastrados</h2>
+
+            <p>Serviços disponíveis para seus clientes.</p>
+          </div>
+        </div>
+
+        <div class="servicos">
+          <article class="servico">
+            <div class="icone-servico">C</div>
+
+            <div class="informacoes-servico">
+              <h3>Corte masculino</h3>
+
+              <p>Corte tradicional</p>
+            </div>
+
+            <div class="duracao">
+              <span>Duração</span>
+              <strong>30 min</strong>
+            </div>
+
+            <div class="preco">
+              <span>Preço</span>
+              <strong>R$ 35,00</strong>
+            </div>
+
+            <button class="botao-editar">Editar</button>
+          </article>
+
+          <article class="servico">
+            <div class="icone-servico">B</div>
+
+            <div class="informacoes-servico">
+              <h3>Barba</h3>
+
+              <p>Barba completa</p>
+            </div>
+
+            <div class="duracao">
+              <span>Duração</span>
+              <strong>20 min</strong>
+            </div>
+
+            <div class="preco">
+              <span>Preço</span>
+              <strong>R$ 25,00</strong>
+            </div>
+
+            <button class="botao-editar">Editar</button>
+          </article>
+
+          <article class="servico">
+            <div class="icone-servico">C</div>
+
+            <div class="informacoes-servico">
+              <h3>Corte + Barba</h3>
+
+              <p>Corte masculino com barba</p>
+            </div>
+
+            <div class="duracao">
+              <span>Duração</span>
+              <strong>45 min</strong>
+            </div>
+
+            <div class="preco">
+              <span>Preço</span>
+              <strong>R$ 55,00</strong>
+            </div>
+
+            <button class="botao-editar">Editar</button>
+          </article>
+
+          <article class="servico">
+            <div class="icone-servico">S</div>
+
+            <div class="informacoes-servico">
+              <h3>Sobrancelha</h3>
+
+              <p>Design de sobrancelha</p>
+            </div>
+
+            <div class="duracao">
+              <span>Duração</span>
+              <strong>15 min</strong>
+            </div>
+
+            <div class="preco">
+              <span>Preço</span>
+              <strong>R$ 15,00</strong>
+            </div>
+
+            <button class="botao-editar">Editar</button>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    >
+  </body>
+</html>
